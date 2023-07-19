@@ -12,12 +12,7 @@ const HeaderCartButton = (props) => {
         <CartIcon />
       </span>
       <span className={classes.text}>Your Cart</span>
-      <span className={classes.badge}>
-        {/* {cartCtx.items.reduce((total, item) => {
-          return total + item.amount;
-        }, 0)} */}
-        {cartCtx.totalAmount}
-      </span>
+      <span className={classes.badge}>{cartCtx.totalAmount}</span>
     </button>
   );
 };
